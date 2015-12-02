@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lacker/ollie/issues"
   },
-  "homepage": "https://github.com/lacker/ollie#readme"
+  "homepage": "https://github.com/lacker/ollie#readme",
+  "dependencies": {
+    "cylon": "^1.2.0"
+  }
 }
