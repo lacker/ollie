@@ -23,4 +23,16 @@ noble.on('discover', (peripheral) => {
 
   // We found our Ollie so we're done scanning
   noble.stopScanning();
+
+  peripheral.on('disconnect', () => {
+    console.log('disconnected');
+    process.exit(0);
+  });
+
+  peripheral.connect((error) => {
+    console.log('connected');
+    peripheral.discoverServices([], (error, services) => {
+      console.log('services:', services);
+    });
+  });
 });
