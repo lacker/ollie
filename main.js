@@ -21,5 +21,6 @@ noble.on('discover', (peripheral) => {
     return;
   }
 
-  
+  // We found our Ollie so we're done scanning
+  noble.stopScanning();
 });
