@@ -1,10 +1,10 @@
 'use strict';
 
-let Cylon = require("cylon");
+let Cylon = require('cylon');
 
 Cylon.robot({
   connections: {
-    bluetooth: { adaptor: "central", module: "cylon-ble" }
+    bluetooth: { adaptor: 'central', module: 'cylon-ble' }
   },
 
   connectBLE: function(peripheral) {
