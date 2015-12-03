@@ -23,5 +23,8 @@
   "dependencies": {
     "cylon": "^1.2.0",
     "cylon-ble": "^0.8.0"
+  },
+  "devDependencies": {
+    "noble": "^1.2.1"
   }
 }
