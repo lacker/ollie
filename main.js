@@ -1,7 +1,6 @@
 'use strict';
 
 let noble = require('noble');
-let config = require('./config.json');
 
 noble.on('stateChange', (state) => {
   console.log('noble state =', state);
